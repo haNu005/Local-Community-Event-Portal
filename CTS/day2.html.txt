@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .event-card {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px gray;
+        }
+
+        button {
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input,
+        select {
+            padding: 10px;
+            width: 250px;
+            margin: 10px;
+        }
+
+        #message {
+            color: green;
+            font-weight: bold;
+        }
+
+        #loading {
+            display: none;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Local Community Event Portal</h1>
+    </header>
+
+    <div class="container">
+
+        <h2>Search Event</h2>
+
+        <input type="text" id="searchBox" placeholder="Search event by name">
+
+        <h2>Filter by Category</h2>
+
+        <select id="categoryFilter">
+            <option value="All">All</option>
+            <option value="Music">Music</option>
+            <option value="Sports">Sports</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+
+        <div id="loading">Loading Events...</div>
+
+        <div id="eventContainer"></div>
+
+        <hr>
+
+        <h2>Register for Event</h2>
+
+        <form id="registerForm">
+
+            <input type="text" name="username" placeholder="Enter Name">
+
+            <input type="email" name="email" placeholder="Enter Email">
+
+            <select name="event">
+                <option value="">Select Event</option>
+                <option value="Music Night">Music Night</option>
+                <option value="Football Match">Football Match</option>
+                <option value="Baking Workshop">Baking Workshop</option>
+            </select>
+
+            <br>
+
+            <button type="submit" id="registerBtn">
+                Register
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
