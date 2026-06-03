@@ -5,14 +5,11 @@
 <head>
     <title>Local Community Event Portal</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Internal CSS -->
     <style>
         body{
             background-color:#f4f4f4;
@@ -22,7 +19,6 @@
 
 <body>
 
-    <!-- Inline CSS -->
     <h1 style="color:red;">Community Event Portal</h1>
 
     <header id="mainHeader">
@@ -38,7 +34,6 @@
         </ul>
     </nav>
 
-    <!-- Event Cards -->
     <section class="eventCard">
         <h3>Music Festival</h3>
         <p>
@@ -53,13 +48,11 @@
         </p>
     </section>
 
-    <!-- Links -->
     <section>
         <h2>Useful Links</h2>
         <a href="https://www.google.com">Visit Google</a>
     </section>
 
-    <!-- Table -->
     <section>
         <h2>Upcoming Events</h2>
 
@@ -90,7 +83,6 @@
         </table>
     </section>
 
-    <!-- Form -->
     <section>
         <h2>Register</h2>
 
@@ -105,7 +97,6 @@
         </form>
     </section>
 
-    <!-- Visibility Example -->
     <section>
         <h2>Visibility Example</h2>
 
@@ -118,7 +109,6 @@
         </div>
     </section>
 
-    <!-- Multi Column -->
     <section>
         <h2>Community News</h2>
 
@@ -139,19 +129,13 @@
 
 //stylesheet.css
 
-/* =====================================
-   Universal Selector
-===================================== */
+
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
-/* =====================================
-   Body Styles
-===================================== */
 
 body{
     font-family:'Poppins',sans-serif;
@@ -164,10 +148,6 @@ body{
     padding:20px;
 }
 
-/* =====================================
-   Main Header
-===================================== */
-
 #mainHeader{
     background:linear-gradient(to right,#007bff,#00c6ff);
     color:white;
@@ -176,25 +156,13 @@ body{
     margin-bottom:20px;
 }
 
-/* =====================================
-   Element Selector
-===================================== */
-
 h2{
     margin:15px 0;
 }
 
-/* =====================================
-   Grouping Selector
-===================================== */
-
 h3,p{
     margin-bottom:10px;
 }
-
-/* =====================================
-   Navigation Menu
-===================================== */
 
 .navMenu{
     list-style:none;
@@ -207,9 +175,6 @@ h3,p{
     padding:10px;
 }
 
-/* =====================================
-   Link Styling
-===================================== */
 
 a:link{
     color:blue;
@@ -227,10 +192,6 @@ a:visited{
     color:purple;
 }
 
-/* =====================================
-   Event Cards
-===================================== */
-
 .eventCard{
     background:rgba(255,255,255,0.8);
 
@@ -243,9 +204,6 @@ a:visited{
     border-radius:10px;
 }
 
-/* =====================================
-   CTA Button
-===================================== */
 
 .cta-button{
     background:#007BFF;
@@ -255,17 +213,9 @@ a:visited{
     cursor:pointer;
 }
 
-/* =====================================
-   Form Outline
-===================================== */
-
 input:focus{
     outline:3px solid orange;
 }
-
-/* =====================================
-   Table Styling
-===================================== */
 
 table{
     width:100%;
@@ -288,9 +238,6 @@ tr:nth-child(even){
     background:#f2f2f2;
 }
 
-/* =====================================
-   Visibility Example
-===================================== */
 
 .hiddenBox{
     visibility:hidden;
@@ -302,20 +249,12 @@ tr:nth-child(even){
     background:red;
 }
 
-/* =====================================
-   Multi Column Layout
-===================================== */
-
 .news{
     column-count:2;
     column-gap:30px;
     column-rule:1px solid gray;
     margin-top:20px;
 }
-
-/* =====================================
-   Responsive Design
-===================================== */
 
 @media screen and (max-width:768px){
 
@@ -335,4 +274,3 @@ tr:nth-child(even){
         width:100%;
     }
 }
-
